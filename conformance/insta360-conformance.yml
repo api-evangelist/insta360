@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Insta360Develop/Insta360_OSC
+notes: >-
+  Insta360 consumer 360 cameras (ONE X/X2/X3/X4/X5, ONE R/RS) implement an HTTP
+  control API built on Google's Open Spherical Camera (OSC) API standard. The
+  Insta360 Pro / Pro 2 / Titan line exposes a separate JSON-over-HTTP command
+  API (ProCameraApi) modeled on OSC command semantics (osc/commands/execute,
+  osc/state). Both are on-device HTTP servers reached over the camera's Wi-Fi AP.
+standards:
+  - id: osc
+    name: Open Spherical Camera (Google OSC) API
+    conforms: true
+    evidence: Insta360_OSC README states implementation is based on Google OSC; osc/info, osc/state, osc/commands/execute endpoints documented.
+    reference: https://developers.google.com/streetview/open-spherical-camera
+  - id: rest-http-json
+    conforms: true
+    evidence: ProCameraApi transfers commands via HTTP request/response with JSON-encoded data.
+  - id: oauth2
+    conforms: false
+    evidence: on-device camera API; no OAuth2 authorization server.
+  - id: rfc9457-problem-details
+    conforms: false

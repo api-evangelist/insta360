@@ -1,8 +1,14 @@
 aid: insta360
 name: Insta360
-description: 'Insta360 is a company surfaced as a portfolio company of idg-capital, qiming and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer-technology. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Insta360 (Arashi Vision Co., Ltd) is a consumer and professional imaging company best known for its
+  360-degree and action cameras (the X, GO, ACE, Link, and Pro/Titan lines). For developers, Insta360
+  runs a first-party developer program through its Insta360Develop GitHub organization and a VitePress
+  developer-documentation site. Cameras expose on-device HTTP control APIs: consumer models implement
+  Google's Open Spherical Camera (OSC) API over the camera Wi-Fi AP, and the Pro/Titan line adds a
+  JSON-over-HTTP command API (ProCameraApi) for capture, live streaming, and file access. Native SDKs
+  wrap this surface for C++ (camera control and media stitching/editing), Android, and iOS so third-party
+  apps can connect to, configure, capture from, and post-process footage from Insta360 hardware.
 url: https://raw.githubusercontent.com/api-evangelist/insta360/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +17,61 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer Technology
-apis: []
+- Cameras
+- Imaging
+- 360 Video
+- Action Cameras
+- SDK
+- Open Spherical Camera
+- IoT
+image: https://raw.githubusercontent.com/api-evangelist/insta360/refs/heads/main/apis.yml
+apis:
+- name: Insta360 OSC API
+  description: >-
+    On-device HTTP/JSON control API for Insta360 consumer 360 cameras (ONE X/X2/X3/X4/X5, ONE R/RS),
+    implemented on Google's Open Spherical Camera (OSC) standard. The camera runs a built-in HTTP server
+    reachable at 192.168.42.1 when a client is connected to the camera's Wi-Fi access point.
+  humanURL: https://insta360develop.github.io/Insta360-Developer_Docs/
+  baseURL: http://192.168.42.1/osc/
+  tags:
+  - Cameras
+  - 360 Video
+  - Open Spherical Camera
+  properties:
+  - type: Documentation
+    url: https://github.com/Insta360Develop/Insta360_OSC
+  - type: APIReference
+    url: https://insta360develop.github.io/Insta360-Developer_Docs/
+- name: Insta360 Pro Camera API
+  description: >-
+    JSON-over-HTTP command API for Insta360 Pro, Pro 2, and Titan professional 360 cameras. Commands are
+    issued to the camera's built-in HTTP server (osc/commands/execute, osc/state) with file access and an
+    RTMP preview stream; the camera IP is shown on the device screen.
+  humanURL: https://github.com/Insta360Develop/ProCameraApi
+  tags:
+  - Cameras
+  - 360 Video
+  - Professional
+  properties:
+  - type: Documentation
+    url: https://github.com/Insta360Develop/ProCameraApi
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +80,28 @@ maintainers:
 common:
 - type: Website
   url: https://insta360.com/
+- type: DeveloperPortal
+  url: https://www.insta360.com/enterprise
+- type: Documentation
+  url: https://insta360develop.github.io/Insta360-Developer_Docs/
+- type: APIReference
+  url: https://insta360develop.github.io/Insta360-Developer_Docs/
+- type: GitHubOrganization
+  url: https://github.com/Insta360Develop
+- type: Packages
+  url: packages/insta360-packages.yml
+- type: SDKs
+  url: packages/insta360-packages.yml
+- type: Conformance
+  url: conformance/insta360-conformance.yml
+- type: LLMsTxt
+  url: llms/insta360-llms.txt
+- type: WellKnown
+  url: well-known/insta360-well-known.yml
+- type: DomainSecurity
+  url: security/insta360-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

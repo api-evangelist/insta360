@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+host: https://www.insta360.com
+notes: >-
+  Probed the standard /.well-known discovery surface on the Insta360 web host.
+  No real discovery documents are published. /.well-known/ai-plugin.json and
+  /llms.txt return HTTP 200 but with a JSON soft-404 body
+  ({"status":404,"error":"Not Found"}), so they are recorded as not-present.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    present: false
+    note: soft-404 JSON body ({"status":404,"error":"Not Found"})
+  - path: /llms.txt
+    status: 200
+    present: false
+    note: soft-404 JSON body ({"status":404,"error":"Not Found"})

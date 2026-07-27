@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Insta360Develop
+notes: >-
+  Insta360 distributes its first-party developer SDKs as source/binary
+  libraries through the Insta360Develop GitHub organization rather than through
+  language package registries (npm/PyPI/Maven/etc.). Each library below was
+  verified as first-party (org display name "Insta360",
+  homepage insta360.com / insta360.com/enterprise).
+packages:
+  - language: cpp
+    registry: github
+    name: Desktop-CameraSDK-Cpp
+    url: https://github.com/Insta360Develop/Desktop-CameraSDK-Cpp
+    description: C++ library to control Insta360 cameras (capture, settings, preview, live).
+    install: git clone https://github.com/Insta360Develop/Desktop-CameraSDK-Cpp
+    official: true
+  - language: cpp
+    registry: github
+    name: Desktop-MediaSDK-Cpp
+    url: https://github.com/Insta360Develop/Desktop-MediaSDK-Cpp
+    description: C++ library to handle stitching and editing of media from Insta360 cameras.
+    install: git clone https://github.com/Insta360Develop/Desktop-MediaSDK-Cpp
+    official: true
+  - language: java
+    platform: android
+    registry: github
+    name: Android-SDK
+    url: https://github.com/Insta360Develop/Android-SDK
+    description: Android SDK to integrate Insta360 360 cameras into Android apps.
+    install: git clone https://github.com/Insta360Develop/Android-SDK
+    official: true
+  - language: swift
+    platform: ios
+    registry: github
+    name: iOS-SDK
+    url: https://github.com/Insta360Develop/iOS-SDK
+    description: iOS SDK to integrate Insta360 360 cameras into iOS apps.
+    install: git clone https://github.com/Insta360Develop/iOS-SDK
+    official: true

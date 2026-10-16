@@ -1,0 +1,14 @@
+{
+  "repo": "insta360",
+  "feeds": [
+    {
+      "source": "https://www.insta360.com/enterprise/industries/news",
+      "feed_url": "https://www.insta360.com/enterprise/industries/news",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-10T13:15:00Z"
+}

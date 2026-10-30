@@ -64,6 +64,88 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Insta360 is a company surfaced as a portfolio company of idg-capital, qiming and added to the API Evangelist network as a stub for enrichment. Sector: consumer-technology. This profile is a lead awaiting the enrichment pipeline.
+Insta360 (Arashi Vision Co., Ltd) is a consumer and professional imaging company best known for its 360-degree and action cameras (the X, GO, ACE, Link, and Pro/Titan lines). For developers, Insta360 runs a first-party developer program through its Insta360Develop GitHub organization and a VitePress developer-documentation site. Cameras expose on-device HTTP control APIs: consumer models implement Google's Open Spherical Camera (OSC) API over the camera Wi-Fi AP, and the Pro/Titan line adds a JSON-over-HTTP command API (ProCameraApi) for capture, live streaming, and file access. Native SDKs wrap this surface for C++ (camera control and media stitching/editing), Android, and iOS so third-party apps can connect to, configure, capture from, and post-process footage from Insta360 hardware.
 
-Backed by: idg-capital, qiming — https://insta360.com/
+**Areas:** Company · Consumer Technology · Camera · Imaging · 360 Video · Action Cameras · SDK · Open Spherical Camera · IoT
+
+## Insta360 on APIs.io
+
+Everything profiled for Insta360 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/insta360/](https://apis.io/providers/insta360/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Insta360 OSC API](https://apis.io/apis/insta360/insta360-osc-api/) — On-device HTTP/JSON control API for Insta360 consumer 360 cameras (ONE X/X2/X3/X4/X5, ONE R/RS), implemented on Google's Open Spherical Camera (OSC)…
+- [Insta360 Pro Camera API](https://apis.io/apis/insta360/insta360-pro-camera-api/) — JSON-over-HTTP command API for Insta360 Pro, Pro 2, and Titan professional 360 cameras. Commands are issued to the camera's built-in HTTP server…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Insta360 Domain Security](https://apis.io/security/insta360/insta360-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://insta360.com/)
+- [Documentation](https://insta360develop.github.io/Insta360-Developer_Docs/)
+- [API reference](https://insta360develop.github.io/Insta360-Developer_Docs/)
+- [Blog](https://www.insta360.com/enterprise/industries/news)
+- [GitHub](https://github.com/Insta360Develop)
+
+## API Evangelist rating
+
+**Kin Score 15.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/insta360/](https://apis.io/providers/insta360/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Insta360: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/insta360/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
